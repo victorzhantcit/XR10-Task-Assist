@@ -97,3 +97,9 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# 加入自訂
+mativve_cheerful-song(freesound.org).wav
+Assets/Fonts
+com.microsoft.mrtk.graphicstools.unity-0.7.1.tgz
+com.microsoft.mixedreality.openxr-1.11.2.tgz

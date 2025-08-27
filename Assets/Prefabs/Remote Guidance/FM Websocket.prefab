@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2852821000639972092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7274228037987391959}
+  - component: {fileID: 3957167390785287813}
+  - component: {fileID: 6446040944299686030}
+  m_Layer: 0
+  m_Name: FM Websocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7274228037987391959
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852821000639972092}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3957167390785287813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852821000639972092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c130a61c13b04b96b9407a4459489f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EditorShowNetworking: 1
+  EditorShowSyncTransformation: 1
+  EditorShowEvents: 1
+  EditorShowDebug: 1
+  EditorShowWebSocketSettings: 1
+  EditorShowNetworkObjects: 0
+  EditorShowReceiverEvents: 1
+  EditorShowConnectionEvents: 1
+  EditorShowNetworkViews: 1
+  ShowLog: 1
+  AutoInit: 0
+  Initialised: 0
+  NetworkType: 0
+  RoomName: Default
+  Settings:
+    IP: 192.168.18.127
+    port: 3000
+    sslEnabled: 0
+    sslProtocols: 240
+    portRequired: 1
+    UseMainThreadSender: 0
+    ConnectionStatus: 0
+    wsid: 
+    autoReconnect: 1
+    pingMS: 0
+    latencyMS: 0
+    wsJoinedRoom: 0
+    wsRoomMaster: 0
+  fmwebsocket: {fileID: 0}
+  OnReceivedByteDataEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: FMSolution.FMETP.GameViewDecoder, Assembly-CSharp
+        m_MethodName: Action_ProcessImageData
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnReceivedStringDataEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Guidance.Core.XR.RemoteGuidanceSlate, Assembly-CSharp
+        m_MethodName: HandleWebSocketDataReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  GetRawReceivedByteDataEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  GetRawReceivedStringDataEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnClientConnectedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Guidance.Core.XR.RemoteGuidanceSlate, Assembly-CSharp
+        m_MethodName: OnClientConnected
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnClientDisconnectedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Guidance.Core.XR.RemoteGuidanceSlate, Assembly-CSharp
+        m_MethodName: OnClientDisconnected
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnConnectionCountChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJoinedLobbyEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJoinedRoomEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  NetworkViews:
+    Keys: 
+    Values: []
+--- !u!114 &6446040944299686030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2852821000639972092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db1d8021bf570e4bb8ae1984006e73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _fmWebSocket: {fileID: 3957167390785287813}
+  _gameViewEncoder: {fileID: 0}
+  _mainRemoteDecoder: {fileID: 0}
+  _microphoneEncoder: {fileID: 0}
